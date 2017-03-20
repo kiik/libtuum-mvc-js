@@ -21,6 +21,8 @@ module.exports = {
     app.use(bodyParser.urlencoded({ extended: false }));
     app.use(cookieParser());
 
+    app.config = require('config');
+
     return app;
   }
 }
