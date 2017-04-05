@@ -11,7 +11,6 @@ module.exports = {
   'create_app': function(dirname) {
     var app = express();
 
-    console.log(path.join(dirname, 'assets'));
     app.use('/assets', express.static(path.join(dirname, 'assets')));
     app.set('views', path.join(dirname, 'templates'));
     app.set('view engine', 'jade');

@@ -7,7 +7,6 @@ var fs   = require('fs'),
 module.exports = {
   'load_routes': function(target, dirname) {
     fs.readdirSync(dirname).forEach(function(file) {
-      console.log(file);
       if(file[0] == '.') return;
 
       try {
